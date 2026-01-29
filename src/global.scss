@@ -1,0 +1,476 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+@import "./theme/fonts.scss";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+* {
+    font-family: SF-Pro-Display-Regular;
+    font-family: SF-Pro-Display-Bold;
+    font-family: SF-Pro-Display-Medium;
+    font-family: SF-Pro-Display-Semibold;
+}
+
+:root {
+    --keyboard-height: 0px;
+    // --ion-safe-area-top: env(safe-area-inset-top);
+}
+
+ion-header {
+    // padding-top: var(--ion-safe-area-top, );
+    padding-top: calc(var(--safe-area-inset-top));
+    background-color: var(--ion-color-bg);
+}
+
+ion-content {
+    --offset-bottom: auto !important;
+    --overflow: hidden;
+    background: var(--ion-color-bg);
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+ion-footer ion-toolbar::part(container) {
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.ios ion-footer ion-toolbar::part(container) {
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+.ios ion-toolbar {
+    padding: 10px 15px;
+    --padding-top: 0px;
+    --background: var(--ion-color-bg);
+    --color: #000000;
+}
+
+
+
+.md ion-toolbar::part(container) {
+    padding-top: calc(35px + env(safe-area-inset-top));
+    // --min-height: calc(56px + 12px + 10px);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    --background: var(--ion-color-bg);
+    --color: #000000;
+}
+
+// ion-toolbar {
+//   --background: var(--ion-color-bg);
+//   --color: #000000;
+
+//   /* Make room for the extra vertical padding so content doesn't feel cramped */
+//   // --min-height: calc(56px + 12px + 10px); /* md default: 56px */
+// }
+
+.input {
+    --highlight-height: 0;
+    padding-top: 0;
+    padding: 0 13px;
+    height: 56px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background-color: var(--ion-color-fb);
+
+    ion-icon {
+        font-size: 20px;
+        color: #9CA3AF;
+    }
+
+    ion-input {
+        margin-left: 10px;
+        flex: 1;
+        font-size: 14px;
+        font-family: SF-Pro-Display-Regular;
+        color: var(--ion-color-txt);
+        --placeholder-color: #9CA3AF;
+        --highlight-color-focused: none;
+    }
+}
+
+.input1 {
+    --highlight-height: 0;
+    padding-top: 0;
+    padding: 0 13px;
+    height: 52px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    border-radius: 24px;
+    border: 1px solid var(--ion-color-lines);
+
+    ion-icon {
+        font-size: 20px;
+        color: #9CA4AB;
+    }
+
+    ion-input {
+        margin-left: 10px;
+        flex: 1;
+        font-size: 14px;
+        font-family: SF-Pro-Display-Regular;
+        color: var(--ion-color-txt);
+        --placeholder-color: #9CA4AB;
+        --highlight-color-focused: none;
+    }
+}
+
+ion-button {
+    height: 56px;
+    --box-shadow: none;
+    text-transform: initial;
+    font-size: 16px;
+    letter-spacing: 0;
+    --border-radius: 16px;
+    font-family: SF-Pro-Display-Bold;
+}
+
+.btn1 {
+    height: 56px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--ion-color-fb);
+}
+
+
+
+.box {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: var(--ion-color-fb);
+}
+
+// .shadow {
+//     box-shadow: 0 3px 15px 0 var(--ion-color-shadow),
+//         0 4px 10px 0 var(--ion-color-shadow);
+// }
+
+.boxo {
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid var(--ion-color-lines);
+}
+
+.dot {
+    height: 6px;
+    width: 6px;
+    border-radius: 10px;
+    background-color: #F2994A;
+    margin: 0 7px;
+}
+
+.fb {
+    height: 48px;
+    width: 72px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--ion-color-fb);
+}
+
+.icon {
+    height: 32px;
+    width: 32px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--ion-color-fb);
+}
+
+.icon1 {
+    height: 86px;
+    width: 96px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--ion-color-fb);
+    border: 1px solid var(--ion-color-chip);
+}
+
+
+.num {
+    height: 24px;
+    width: 24px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #F2994A;
+}
+
+.chip {
+    height: 26px;
+    padding: 0 10px;
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    background-color: var(--ion-color-fb);
+}
+
+.chip1 {
+    height: 44px;
+    padding: 0 16px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #FCEAD9;
+}
+
+
+.chipo {
+    height: 44px;
+    padding: 0 16px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--ion-color-bg);
+    border: 1px solid var(--ion-color-lines);
+}
+
+
+.list {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+}
+
+.list1 {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list2 {
+    flex-direction: row;
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+    display: flex;
+}
+
+.lines {
+    border: 1px solid var(--ion-color-lines);
+    margin: 20px 0px;
+}
+
+
+
+.rbsheet {
+    --border-radius: 20px;
+    height: auto;
+    background-color: transparent;
+
+    ion-modal::part(content) {
+        backdrop-filter: blur(12px);
+    }
+
+    ion-content {
+        --background: var(--ion-color-bg);
+    }
+}
+
+.scroll {
+    flex-wrap: nowrap;
+    overflow-x: scroll !important;
+    overflow-y: hidden;
+    align-items: center;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.title {
+    font-size: 32px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Bold;
+}
+
+.apptitle {
+    font-size: 24px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Semibold;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Semibold;
+}
+
+.r10 {
+    font-size: 10px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Regular;
+}
+
+.m10 {
+    font-size: 10px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Medium;
+}
+
+.s10 {
+    font-size: 10px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Semibold;
+}
+
+.b10 {
+    font-size: 10px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Bold;
+}
+
+.r12 {
+    font-size: 12px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Regular;
+}
+
+.m12 {
+    font-size: 12px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Medium;
+}
+
+.s12 {
+    font-size: 12px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Semibold;
+}
+
+.b12 {
+    font-size: 12px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Bold;
+}
+
+.r14 {
+    font-size: 14px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Regular;
+}
+
+.m14 {
+    font-size: 14px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Medium;
+}
+
+.s14 {
+    font-size: 14px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Semibold;
+}
+
+.b14 {
+    font-size: 14px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Bold;
+}
+
+.r16 {
+    font-size: 16px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Regular;
+}
+
+.m16 {
+    font-size: 16px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Medium;
+}
+
+.s16 {
+    font-size: 16px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Semibold;
+}
+
+.b16 {
+    font-size: 16px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Bold;
+}
+
+.r18 {
+    font-size: 18px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Regular;
+}
+
+.m18 {
+    font-size: 18px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Medium;
+}
+
+.s18 {
+    font-size: 18px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Semibold;
+}
+
+.b18 {
+    font-size: 18px;
+    color: var(--ion-color-txt);
+    font-family: SF-Pro-Display-Bold;
+}
