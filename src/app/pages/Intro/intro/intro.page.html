@@ -1,0 +1,50 @@
+<ion-content [fullscreen]="true" class="ion-padding" >
+
+  <!-- <ion-toggle [checked]="darkMode" (ionChange)="toggleDarkMode()"></ion-toggle> -->
+  <swiper-container #swiper (afterinit)="swiperReday()" (slidechange)="swiperSlideChanged($event)" [pagination]="true">
+
+    <swiper-slide>
+
+      <div class="column" style="align-items: center;margin-top: 40px;">
+        <ion-img [src]="darkMode?'../../../../assets/image/s1d.png':'../../../../assets/image/s1.png'"
+          style="height: 250px;width: 300px;margin-top: 25px;" />
+      </div>
+
+      <div class="ion-text-center" style="margin-top: 20px;">
+        <ion-text class="apptitle">Finance app the safest and most trusted</ion-text>
+      </div>
+
+      <div class="ion-text-center" style="margin-top: 10px;margin-bottom: 50px;">
+        <ion-text class="s14" style="color: var(--ion-color-dis);">Your finance work starts here. Our here to help you track and deal with speeding up your
+          transactions.</ion-text>
+      </div>
+
+    </swiper-slide>
+
+    <swiper-slide>
+
+      <div class="column" style="align-items: center;margin-top: 40px;">
+        <ion-img [src]="darkMode?'../../../../assets/image/s2d.png':'../../../../assets/image/s2.png'"
+          style="height: 250px;width: 300px;margin-top: 25px;" />
+      </div>
+
+      <div class="ion-text-center" style="margin-top: 20px;">
+        <ion-text class="apptitle">The fastest transaction process only here</ion-text>
+      </div>
+
+      <div class="ion-text-center" style="margin-top: 10px;margin-bottom: 50px;">
+        <ion-text class="r14" style="color: var(--ion-color-dis);">Get easy to pay all your bills with just a few steps.
+          Paying your bills become fast and efficient.</ion-text>
+      </div>
+
+    </swiper-slide>
+
+  </swiper-container>
+
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-button routerLink="/login" expand="block">Get Started</ion-button>
+  </ion-toolbar>
+</ion-footer>

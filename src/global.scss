@@ -165,6 +165,8 @@ ion-button {
     letter-spacing: 0;
     --border-radius: 16px;
     font-family: SF-Pro-Display-Bold;
+    --background: var(--ion-color-txt);
+    --color: var(--ion-color-bg);
 }
 
 .btn1 {
@@ -200,13 +202,54 @@ ion-button {
     height: 6px;
     width: 6px;
     border-radius: 10px;
-    background-color: #F2994A;
-    margin: 0 7px;
+    background-color: #2FA2B9;
 }
 
 .fb {
+    height: 56px;
+    flex: 1;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid var(--ion-color-lines);
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--ion-color-icon);
+}
+
+.icon1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--ion-color-fb);
+}
+
+.icon2 {
     height: 48px;
-    width: 72px;
+    width: 48px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--ion-color-fb);
+}
+
+
+.num {
+    height: 32px;
+    width: 32px;
     border-radius: 8px;
     align-items: center;
     justify-content: center;
@@ -214,73 +257,26 @@ ion-button {
     background-color: var(--ion-color-fb);
 }
 
-.icon {
+.usd {
     height: 32px;
-    width: 32px;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--ion-color-fb);
-}
-
-.icon1 {
-    height: 86px;
-    width: 96px;
-    border-radius: 12px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: var(--ion-color-fb);
-    border: 1px solid var(--ion-color-chip);
-}
-
-
-.num {
-    height: 24px;
-    width: 24px;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: #F2994A;
-}
-
-.chip {
-    height: 26px;
     padding: 0 10px;
     border-radius: 25px;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     display: flex;
+    background-color: var(--ion-color-icon);
+}
+
+.chip {
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     background-color: var(--ion-color-fb);
 }
-
-.chip1 {
-    height: 44px;
-    padding: 0 16px;
-    border-radius: 16px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: #FCEAD9;
-}
-
-
-.chipo {
-    height: 44px;
-    padding: 0 16px;
-    border-radius: 16px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    background-color: var(--ion-color-bg);
-    border: 1px solid var(--ion-color-lines);
-}
-
 
 .list {
     flex-direction: row;
@@ -338,7 +334,7 @@ ion-button {
 }
 
 .title {
-    font-size: 32px;
+    font-size: 30px;
     color: var(--ion-color-txt);
     font-family: SF-Pro-Display-Bold;
 }
@@ -346,13 +342,13 @@ ion-button {
 .apptitle {
     font-size: 24px;
     color: var(--ion-color-txt);
-    font-family: SF-Pro-Display-Semibold;
+    font-family: SF-Pro-Display-Bold;
 }
 
 .subtitle {
     font-size: 20px;
     color: var(--ion-color-txt);
-    font-family: SF-Pro-Display-Semibold;
+    font-family: SF-Pro-Display-Bold;
 }
 
 .r10 {

@@ -1,0 +1,34 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/login">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-text class="apptitle">Verify it’s you</ion-text>
+  <div style="margin-top: 5px;">
+    <ion-text class="r16" style="color: var(--ion-color-dis);">We send a code to <ion-text class="r16">( *****@mail.com
+        ).</ion-text> Enter it here to verify your identity</ion-text>
+  </div>
+
+  <div style="margin-top:40px;justify-content: center;display: flex;margin-bottom: 20px;">
+    <ng-otp-input #ngOtpInput (onInputChange)="onOtpChange($event)" [config]="otpConfig">
+    </ng-otp-input>
+  </div>
+
+  <div class="ion-text-center">
+    <ion-text class="b16" style="color: #0A6375;">Resend Code</ion-text>
+  </div>
+
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-button routerLink="/finger" expand="block">Confirm</ion-button>
+  </ion-toolbar>
+</ion-footer>

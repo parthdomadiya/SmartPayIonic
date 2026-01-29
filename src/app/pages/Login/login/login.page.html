@@ -1,0 +1,55 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/signup">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-text class="apptitle">Hi There! 👋</ion-text>
+  <div style="margin-top: 5px;">
+    <ion-text class="r16" style="color: var(--ion-color-dis);">Welcome back, Sign in to your account</ion-text>
+  </div>
+
+  <div class="input" style="margin-top: 20px;">
+    <ion-input placeholder="Email" />
+  </div>
+
+  <ion-item class="input" color="fb" lines="none" style="margin-top: 10px;padding: 0 ;margin-bottom: 20px;">
+    <ion-input type="{{ showPassword ? 'text' : 'password' }}" [(ngModel)]="password" placeholder="Password"
+      style="flex: 1;"></ion-input>
+    <ion-icon name="{{ showPassword ? 'eye-off' : 'eye' }}" slot="end" (click)="togglePasswordVisibility()"></ion-icon>
+  </ion-item>
+
+  <ion-text routerLink="/otp" class="b16" style="color: #0A6375;">Forgot Password?</ion-text>
+
+  <ion-button routerLink="/ccard" expand="block" style="margin: 25px 0;">Sign In</ion-button>
+
+  <div class="list">
+    <div class="lines" style="flex: 1;"></div>
+    <ion-text class="r14" style="color: var(--ion-color-dis);margin: 0 10px;">OR</ion-text>
+    <div class="lines" style="flex: 1;"></div>
+  </div>
+
+  <div class="list" style="margin: 12px 0;">
+    <div class="fb">
+      <ion-img src="../../../../assets/image/s3.png" style="height: 24px;width: 24px;" />
+    </div>
+    <div class="fb" style="margin-left: 10px;">
+       <ion-icon name="logo-apple" style="font-size: 24px;color: var(--ion-color-txt);" />
+    </div>
+  </div>
+
+</ion-content>
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <div class="list" style="justify-content: center;">
+       <ion-text class="r16" style="color: var(--ion-color-dis);">Don't have an account? </ion-text>
+        <ion-text class="b16" style="color: #0A6375;margin-left: 5px;">Sign up</ion-text>
+    </div>
+  </ion-toolbar>
+</ion-footer>
