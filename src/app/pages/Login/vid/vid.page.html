@@ -1,0 +1,35 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <div slot="start">
+      <ion-img [src]="darkMode?'../../../../assets/image/s5d.png':'../../../../assets/image/s5.png'"
+        style="height: 77px;width: 91px;" />
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-text class="apptitle">Verify your identity</ion-text>
+
+  <div style="margin-top: 8px;">
+    <ion-text class="r16" style="color: var(--ion-color-dis);">Where would you like <ion-text class="b16"
+        style="color: #0A6375;">Smartpay</ion-text> to send your security code?</ion-text>
+  </div>
+
+  <div class="box list" style="margin-top: 15px;">
+    <ion-icon name="checkmark-circle" style="font-size: 24px;color:#0A6375;" />
+    <div style="margin-left: 10px;flex: 1;">
+      <ion-text class="b16">Email</ion-text>
+      <div class="input" >
+        <ion-input placeholder="A*******@mail.com" />
+      </div>
+    </div>
+     <ion-icon name="mail-outline" style="font-size: 24px;color:#9CA3AF;" />
+  </div>
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-button routerLink="/npass" expand="block">Continue</ion-button>
+  </ion-toolbar>
+</ion-footer>

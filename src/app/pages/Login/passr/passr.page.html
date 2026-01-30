@@ -1,0 +1,29 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <div slot="start">
+      <ion-img [src]="darkMode?'../../../../assets/image/s5d.png':'../../../../assets/image/s5.png'"
+        style="height: 77px;width: 91px;" />
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-text class="apptitle">Passsword Recovery</ion-text>
+
+  <div style="margin-top: 8px;">
+    <ion-text class="r16" style="color: var(--ion-color-dis);">Enter your registered email below to receive password
+      instructions</ion-text>
+  </div>
+
+  <div class="input" style="margin-top: 20px;">
+    <ion-input placeholder="anabelan|" />
+  </div>
+
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-button routerLink="/vid" expand="block">Send me email</ion-button>
+  </ion-toolbar>
+</ion-footer>

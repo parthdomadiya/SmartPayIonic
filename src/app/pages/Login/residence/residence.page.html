@@ -1,0 +1,86 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/signup">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-text class="apptitle">Country of Residence</ion-text>
+  <div style="margin-top: 10px;">
+    <ion-text class="r16" style="color: var(--ion-color-dis);">Please select all the countries that you’re a tax
+      recident in</ion-text>
+  </div>
+
+  <div id="open-modal" class="input" style="margin-top: 20px;">
+    <ion-img src="../../../../assets/image/s7.png" style="height: 24px;width: 32px;" />
+    <ion-text class="b16" style="margin-left: 10px;flex: 1;">United States</ion-text>
+    <ion-icon name="chevron-down" style="font-size: 20px;color: var(--ion-color-dis);" />
+  </div>
+
+  <ion-modal cssClass="rbsheet" trigger="open-modal" [initialBreakpoint]="0.65" [breakpoints]="[0, 0.65]"
+    handleBehavior="cycle">
+    <ng-template>
+      <ion-content class="ion-padding">
+
+        <div class="list">
+          <div class="input" style="flex: 1;">
+            <ion-icon name="search-outline" style="font-size: 24px;color: var(--ion-color-txt);" />
+            <ion-input placeholder="Search" style="margin-left: 10px;flex: 1;" />
+          </div>
+          <ion-text (click)="close()" class="b16" style="margin-left: 10px;">Cancel</ion-text>
+        </div>
+
+        <div class="input" style="margin-top: 15px;">
+          <ion-img src="../../../../assets/image/s7.png" style="height: 24px;width: 32px;" />
+          <ion-text class="s16" style="margin-left: 15px;color: var(--ion-color-dis);">US</ion-text>
+          <ion-text class="s16" style="margin-left: 10px;flex: 1;">United States</ion-text>
+          <ion-icon name="checkmark" style="font-size: 20px;color: var(--ion-color-dis);" />
+        </div>
+
+        <div class="list" style="margin-top: 20px;">
+          <ion-img src="../../../../assets/image/s8.png" style="height: 24px;width: 32px;" />
+          <ion-text class="s16" style="margin-left: 15px;color: var(--ion-color-dis);">GB</ion-text>
+          <ion-text class="s16" style="margin-left: 10px;flex: 1;">United Kingdom</ion-text>
+        </div>
+
+        <div class="list" style="margin-top: 20px;">
+          <ion-img src="../../../../assets/image/s9.png" style="height: 24px;width: 32px;" />
+          <ion-text class="s16" style="margin-left: 15px;color: var(--ion-color-dis);">SG</ion-text>
+          <ion-text class="s16" style="margin-left: 10px;flex: 1;">Singapore</ion-text>
+        </div>
+
+        <div class="list" style="margin-top: 20px;">
+          <ion-img src="../../../../assets/image/s10.png" style="height: 24px;width: 32px;" />
+          <ion-text class="s16" style="margin-left: 15px;color: var(--ion-color-dis);">CN</ion-text>
+          <ion-text class="s16" style="margin-left: 10px;flex: 1;">China</ion-text>
+        </div>
+
+        <div class="list" style="margin-top: 20px;">
+          <ion-img src="../../../../assets/image/s11.png" style="height: 24px;width: 32px;" />
+          <ion-text class="s16" style="margin-left: 15px;color: var(--ion-color-dis);">NL</ion-text>
+          <ion-text class="s16" style="margin-left: 10px;flex: 1;">Netherland</ion-text>
+        </div>
+
+        <div class="list" style="margin-top: 20px;">
+          <ion-img src="../../../../assets/image/s12.png" style="height: 24px;width: 32px;" />
+          <ion-text class="s16" style="margin-left: 15px;color: var(--ion-color-dis);">ID</ion-text>
+          <ion-text class="s16" style="margin-left: 10px;flex: 1;">Indonesia</ion-text>
+        </div>
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+</ion-content>
+
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-button routerLink="/reason" expand="block">Continue</ion-button>
+  </ion-toolbar>
+</ion-footer>

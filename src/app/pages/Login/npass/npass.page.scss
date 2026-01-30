@@ -1,0 +1,6 @@
+ion-icon[name="eye-outline"], ion-icon[name="eye-off-outline"] {
+    font-size: 14px;
+    color: #AAB2BA;
+    --highlight-color-focused:none
+  }
+ion-input[type=password]::-ms-reveal { display: none; }

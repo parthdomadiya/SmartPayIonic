@@ -48,7 +48,6 @@
     --keyboard-height: 0px;
     // --ion-safe-area-top: env(safe-area-inset-top);
 }
-
 ion-header {
     // padding-top: var(--ion-safe-area-top, );
     padding-top: calc(var(--safe-area-inset-top));
@@ -82,8 +81,6 @@ ion-footer ion-toolbar::part(container) {
     --background: var(--ion-color-bg);
     --color: #000000;
 }
-
-
 
 .md ion-toolbar::part(container) {
     padding-top: calc(35px + env(safe-area-inset-top));
@@ -195,7 +192,7 @@ ion-button {
 .boxo {
     padding: 15px;
     border-radius: 15px;
-    border: 1px solid var(--ion-color-lines);
+    border: 1px solid var(--ion-color-icon);
 }
 
 .dot {

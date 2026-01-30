@@ -1,0 +1,32 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/reason">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <ion-text class="apptitle">Set your PIN code</ion-text>
+  <div style="margin-top: 10px;">
+    <ion-text class="r16" style="color: var(--ion-color-dis);">We use state-of-the-art security measures to protect your information at all times</ion-text>
+  </div>
+
+  <div style="justify-content: center;display: flex;">
+    <code-input [isCodeHidden]="true" [codeLength]="5" (codeChanged)="onCodeChanged($event)"
+      (codeCompleted)="onCodeCompleted($event)" style="--item-height: 60px;--item-border-radius: 15px;--item-font-weight: 500px;width: 350px;
+              --item-shadow-focused:none;
+              margin-top: 20px;margin-bottom: 20px;color: var(--ion-color-txt);">
+    </code-input>
+  </div>
+
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-button routerLink="/vid1" expand="block">Create PIN</ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,54 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/vid1">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-text class="apptitle">Proof of residency</ion-text>
+  <div style="margin-top: 10px;margin-bottom: 20px;">
+    <ion-text class="r16" style="color: var(--ion-color-dis);">Prove you live in United States</ion-text>
+  </div>
+
+  <ion-text class="s16" style="color: var(--ion-color-dis);">Nationality</ion-text>
+
+  <div routerLink="/ccard" class="input" style="margin-top: 20px;margin-bottom: 20px;">
+    <ion-img src="../../../../assets/image/s7.png" style="height: 24px;width: 32px;" />
+    <ion-text class="b16" style="margin-left: 10px;flex: 1;">United States</ion-text>
+    <ion-text class="b14" style="color: #2FA2B9;">Change</ion-text>
+  </div>
+
+  <ion-text class="s16" style="color: var(--ion-color-dis);">Method of verification</ion-text>
+
+  <div class="boxo" style="margin-top: 20px;">
+    <div class="list">
+      <div class="icon1">
+        <ion-img src="../../../../assets/image/s17.png" style="height: 26px;width: 26px;" />
+      </div>
+      <ion-text class="b16" style="margin-left: 12px;flex: 1;">Passport</ion-text>
+      <ion-icon name="chevron-forward" style="font-size: 24px;color: #9CA3AF;" />
+    </div>
+    <div class="lines"></div>
+    <div class="list">
+      <div class="icon1">
+        <ion-img src="../../../../assets/image/s18.png" style="height: 26px;width: 26px;" />
+      </div>
+      <ion-text class="b16" style="margin-left: 12px;flex: 1;">Identity Card</ion-text>
+      <ion-icon name="chevron-forward" style="font-size: 24px;color: #9CA3AF;" />
+    </div>
+    <div class="lines"></div>
+    <div class="list">
+      <div class="icon1">
+        <ion-img src="../../../../assets/image/s19.png" style="height: 26px;width: 26px;" />
+      </div>
+      <ion-text class="b16" style="margin-left: 12px;flex: 1;">Digital Document</ion-text>
+      <ion-icon name="chevron-forward" style="font-size: 24px;color: #9CA3AF;" />
+    </div>
+  </div>
+
+</ion-content>

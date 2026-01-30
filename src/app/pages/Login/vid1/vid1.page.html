@@ -1,0 +1,31 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/pin">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div >
+    <ion-text class="apptitle">Let’s verify your identity</ion-text>
+  </div>
+  <div  style="margin-top: 5px;">
+    <ion-text class="r16" style="color: var(--ion-color-dis);">We’re required by law to verify your identity before we can use your money</ion-text>
+  </div>
+
+  <div class="column" style="align-items: center;margin-top: 20px;">
+    <ion-img [src]="darkMode?'../../../../assets/image/s15d.png':'../../../../assets/image/s15.png'"
+      style="height: 281px;width: 237px;" />
+  </div>
+
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-button routerLink="/face" expand="block">Verify Identity</ion-button>
+  </ion-toolbar>
+</ion-footer>
