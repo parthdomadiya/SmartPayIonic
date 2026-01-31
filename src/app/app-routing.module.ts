@@ -72,6 +72,22 @@ const routes: Routes = [
     path: 'ncard',
     loadChildren: () => import('./pages/Login/ncard/ncard.module').then( m => m.NcardPageModule)
   },
+  {
+    path: 'cardinfo',
+    loadChildren: () => import('./pages/Login/cardinfo/cardinfo.module').then( m => m.CardinfoPageModule)
+  },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'scan',
+    loadChildren: () => import('./pages/Scan/scan/scan.module').then( m => m.ScanPageModule)
+  },
+  {
+    path: 'qrcode',
+    loadChildren: () => import('./pages/Scan/qrcode/qrcode.module').then( m => m.QrcodePageModule)
+  },
 ];
 
 @NgModule({

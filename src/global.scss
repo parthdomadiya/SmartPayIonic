@@ -55,14 +55,20 @@ ion-header {
 }
 
 ion-content {
-    --offset-bottom: auto !important;
-    --overflow: hidden;
+    --offset-bottom: auto;
+    // --overflow: hidden;
     background: var(--ion-color-bg);
     overflow: auto;
 
     &::-webkit-scrollbar {
         display: none;
+ 
     }
+}
+
+ion-content::part(scroll) {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 ion-footer ion-toolbar::part(container) {
@@ -91,6 +97,9 @@ ion-footer ion-toolbar::part(container) {
     --background: var(--ion-color-bg);
     --color: #000000;
 }
+
+
+///
 
 // ion-toolbar {
 //   --background: var(--ion-color-bg);

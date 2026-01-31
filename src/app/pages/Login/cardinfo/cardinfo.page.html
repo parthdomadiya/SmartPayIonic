@@ -1,0 +1,71 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/ncard">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+    <ion-title class="b18" style="text-align: center;">New Card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-img [src]="darkMode?'../../../../assets/image/s24d.png':'../../../../assets/image/s24.png'"
+    style="margin-bottom: 20px;" />
+
+  <ion-text class="b18">Card Detail</ion-text>
+
+  <div class="input" style="margin-top: 20px;">
+    <ion-input placeholder="Card number" type="tel" style="flex: 1;" />
+    <ion-img src="../../../../assets/image/s25.png" style="height: 24px;width: 32px;" />
+  </div>
+
+  <div class="list" style="margin-top: 20px;">
+    <div class="input" style="flex: 1;">
+      <ion-input placeholder="Expiry date" style="flex: 1;" />
+    </div>
+    <div class="input" style="flex: 1;margin-left: 10px;">
+      <ion-input placeholder="CVV" type="tel" style="flex: 1;" />
+    </div>
+  </div>
+
+  <div class="input" style="margin-top: 20px;">
+    <ion-input placeholder="Card holder" style="flex: 1;" />
+  </div>
+
+  <div class="input" style="margin-top: 20px;">
+    <ion-img src="../../../../assets/image/s7.png" style="height: 24px;width: 32px;" />
+    <ion-text class="b16" style="margin-left: 10px;flex: 1;">United States</ion-text>
+    <ion-icon name="chevron-down" style="font-size: 20px;color: var(--ion-color-dis);" />
+  </div>
+
+  <ion-modal id="example-modal" #modal trigger="open-custom">
+    <ng-template>
+      <div class="wrapper">
+
+        <div class="column" style="align-items: center;margin-top: -18px;">
+          <ion-img [src]="darkMode?'../../../../assets/image/s26d.png':'../../../../assets/image/s26.png'"  />
+        </div>
+
+        <div class="ion-text-center" style="margin-top: 20px;">
+          <ion-text class="b18" >Great! your card is ready 😎</ion-text>
+        </div>
+
+        <div class="ion-text-center" style="margin-top: 10px;">
+          <ion-text class="r12" style="color: var(--ion-color-dis);">Now you can shop, transmit and transfer conveniently</ion-text>
+        </div>
+
+         <ion-button (click)="close()" style="margin-top: 20px;" expand="block">Ok, I’m ready!</ion-button>
+
+      </div>
+    </ng-template>
+  </ion-modal>
+
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-button id="open-custom" expand="block">Save</ion-button>
+  </ion-toolbar>
+</ion-footer>

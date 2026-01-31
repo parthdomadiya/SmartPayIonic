@@ -1,0 +1,98 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <div class="list" style="padding: 20px;background-color: #0A6375;padding-bottom: 150px;">
+    <div style="flex: 1;">
+      <ion-text class="m12" style="color: #fff;">Welcome back!</ion-text>
+      <div style="margin-top: 5px;">
+        <ion-text class="subtitle" style="color: #fff;">Anabella Angela</ion-text>
+      </div>
+    </div>
+    <div class="icon" style="border-color: #ffffff15;">
+      <ion-icon name="notifications-outline" style="font-size: 20px;color: #fff;" />
+    </div>
+    <div routerLink="/chat" class="icon" style="border-color: #ffffff15;margin-left: 7px;">
+      <ion-icon name="chatbubble-outline" style="font-size: 20px;color: #fff;" />
+    </div>
+  </div>
+  <div style="margin: 0 20px;margin-top: -130px;">
+    <ion-img routerLink="/mtopup" src="../../../../assets/image/s27.png" />
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="box list" style="justify-content: space-around;">
+    <div routerLink="/topup" class="column" style="align-items: center;">
+      <ion-img [src]="darkMode?'../../../../assets/image/s28d.png':'../../../../assets/image/s28.png'"
+        style="height: 24px;width: 24px;margin-bottom: 5px;" />
+      <ion-text class="m12">Deposit</ion-text>
+    </div>
+    <div routerLink="/transfer" class="column" style="align-items: center;">
+      <ion-img [src]="darkMode?'../../../../assets/image/s29d.png':'../../../../assets/image/s29.png'"
+        style="height: 24px;width: 24px;margin-bottom: 5px;" />
+      <ion-text class="m12">Transfers</ion-text>
+    </div>
+    <div routerLink="/withdraw" class="column" style="align-items: center;">
+      <ion-img [src]="darkMode?'../../../../assets/image/s30d.png':'../../../../assets/image/s30.png'"
+        style="height: 24px;width: 24px;margin-bottom: 5px;" />
+      <ion-text class="m12">Withdraw</ion-text>
+    </div>
+    <div routerLink="/afloc" class="column" style="align-items: center;">
+      <ion-img [src]="darkMode?'../../../../assets/image/s31d.png':'../../../../assets/image/s31.png'"
+        style="height: 24px;width: 24px;margin-bottom: 5px;" />
+      <ion-text class="m12">More</ion-text>
+    </div>
+  </div>
+
+  <div class="list" style="margin-top: 20px;">
+    <ion-text class="b14" style="flex: 1;color: var(--ion-color-dis);">Today, Dec 29</ion-text>
+    <div class="list" routerLink="/this">
+      <ion-text class="m14" style="margin-right: 5px;">All transactions</ion-text>
+      <ion-icon name="chevron-forward" style="font-size: 14px;color: #2FA2B9;" />
+    </div>
+  </div>
+
+  <div class="list" style="margin-top: 20px;">
+    <div class="icon2">
+      <ion-img src="../../../../assets/image/s32.png" style="height: 26px;width: 26px;" />
+    </div>
+    <div style="margin-left: 12px;flex: 1;">
+      <ion-text class="b14">Gym</ion-text>
+      <div style="margin-top: 5px;">
+        <ion-text class="m12" style="color: var(--ion-color-dis);">Payment</ion-text>
+      </div>
+    </div>
+    <ion-text class="b14">- $45.99</ion-text>
+  </div>
+
+  <div class="lines"></div>
+
+  <div class="list">
+    <div class="icon2">
+      <ion-img src="../../../../assets/image/s33.png" style="height: 26px;width: 26px;" />
+    </div>
+    <div style="margin-left: 12px;flex: 1;">
+      <ion-text class="b14">Bank of America</ion-text>
+      <div style="margin-top: 5px;">
+        <ion-text class="m12" style="color: #2FA2B9;">Deposit</ion-text>
+      </div>
+    </div>
+    <ion-text class="b14">+ $1,328.00</ion-text>
+  </div>
+
+  <div class="lines"></div>
+
+  <div class="list" style="margin-bottom: 100px;">
+    <div class="icon2">
+      <ion-img src="../../../../assets/image/s34.png" style="height: 26px;width: 26px;" />
+    </div>
+    <div style="margin-left: 12px;flex: 1;">
+      <ion-text class="b14">To Brody Armando</ion-text>
+      <div style="margin-top: 5px;">
+        <ion-text class="m12" style="color: var(--ion-color-dis);">Sent</ion-text>
+      </div>
+    </div>
+    <ion-text class="b14">- $699.00</ion-text>
+  </div>
+
+
+</ion-content>
