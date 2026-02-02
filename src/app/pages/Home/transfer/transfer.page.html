@@ -1,0 +1,74 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/tabs">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+    <ion-title class="b18" style="text-align: center;">Transfer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-text class="b18">Choose cards</ion-text>
+
+  <div class="list scroll" style="margin-top: 15px;margin-bottom: 20px;">
+    <div>
+      <ion-img src="../../../../assets/image/s88.png" style="height: 190px;width: 310px;" />
+    </div>
+    <div>
+      <ion-img src="../../../../assets/image/s38.png" style="height: 190px;width: 310px;margin-left: 10px;" />
+    </div>
+  </div>
+
+  <ion-text class="b18">Choose recipients</ion-text>
+
+  <div class="input" style="margin-top: 15px;">
+    <ion-icon name="search" style="font-size: 24px;color: var(--ion-color-txt);" />
+    <ion-input placeholder="Search contacts..." style="margin-left: 10px;flex: 1;" />
+  </div>
+
+  <div class="list scroll" style="margin-top: 15px;margin-bottom: 20px;">
+    <div>
+      <div class="boxo" style="border-color: #2FA2B9;width: 130px;">
+        <div class="column" style="align-items: flex-end;">
+          <ion-icon name="checkmark" style="font-size: 18px;color: #0A6375;" />
+        </div>
+        <div class="column" style="align-items: center;margin-top: 15px;">
+          <ion-img src="../../../../assets/image/s39.png" style="height: 48px;width: 48px;" />
+        </div>
+        <div class="ion-text-center" style="margin-top: 10px;">
+          <ion-text class="b12">Maria<br />Sevchenko</ion-text>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="boxo" style="width: 130px;margin: 0 10px;">
+        <div class="column" style="align-items: center;margin-top: 25px;">
+          <ion-img src="../../../../assets/image/s40.png" style="height: 48px;width: 48px;" />
+        </div>
+        <div class="ion-text-center" style="margin-top: 20px;">
+          <ion-text class="b12">Andrade<br />Alexander Base</ion-text>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="boxo" style="width: 130px;">
+        <div class="column" style="align-items: center;margin-top: 25px;">
+          <ion-img src="../../../../assets/image/s41.png" style="height: 48px;width: 48px;" />
+        </div>
+        <div class="ion-text-center" style="margin-top: 20px;">
+          <ion-text class="b12">Michella<br />Princess Anna</ion-text>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-button routerLink="/smoney" expand="block">Continue</ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,31 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/tabs">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <div class="column" style="align-items: center;">
+   <ion-img routerLink="/map" src="../../../../assets/image/s48.png" style="height: 228px;width: 258px;" />
+  </div>
+
+  <div class="ion-text-center" style="margin-top: 20px;">
+    <ion-text class="apptitle" >Find Location</ion-text>
+  </div>
+
+  <div class="ion-text-center" style="margin-top: 10px;">
+    <ion-text class="r14" style="color: var(--ion-color-dis);" >To do this process please click now to find the location your nearest ATM</ion-text>
+  </div>
+  
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-button routerLink="/tabs" expand="block">Cancel</ion-button>
+  </ion-toolbar>
+</ion-footer>

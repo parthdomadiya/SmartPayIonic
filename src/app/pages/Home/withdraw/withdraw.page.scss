@@ -1,0 +1,19 @@
+.input {
+    --highlight-height: 0;
+    padding-top: 0;
+    padding: 0 12px;
+    height: 56px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    background-color: transparent;
+text-align: center;
+    ion-input {
+       font-size: 24px;
+        font-family: SF-Pro-Display-Bold;
+        color: var(--ion-color-txt);
+        --placeholder-color: #9CA3AF;
+        --highlight-color-focused: none;
+    }
+}

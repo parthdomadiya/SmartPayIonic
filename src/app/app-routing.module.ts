@@ -88,6 +88,38 @@ const routes: Routes = [
     path: 'qrcode',
     loadChildren: () => import('./pages/Scan/qrcode/qrcode.module').then( m => m.QrcodePageModule)
   },
+  {
+    path: 'transfer',
+    loadChildren: () => import('./pages/Home/transfer/transfer.module').then( m => m.TransferPageModule)
+  },
+  {
+    path: 'smoney',
+    loadChildren: () => import('./pages/Home/smoney/smoney.module').then( m => m.SmoneyPageModule)
+  },
+  {
+    path: 'tsuccess',
+    loadChildren: () => import('./pages/Home/tsuccess/tsuccess.module').then( m => m.TsuccessPageModule)
+  },
+  {
+    path: 'topup',
+    loadChildren: () => import('./pages/Home/topup/topup.module').then( m => m.TopupPageModule)
+  },
+  {
+    path: 'confirm',
+    loadChildren: () => import('./pages/Home/confirm/confirm.module').then( m => m.ConfirmPageModule)
+  },
+  {
+    path: 'withdraw',
+    loadChildren: () => import('./pages/Home/withdraw/withdraw.module').then( m => m.WithdrawPageModule)
+  },
+  {
+    path: 'afloc',
+    loadChildren: () => import('./pages/Home/afloc/afloc.module').then( m => m.AflocPageModule)
+  },
+  {
+    path: 'map',
+    loadChildren: () => import('./pages/Home/map/map.module').then( m => m.MapPageModule)
+  },
 ];
 
 @NgModule({

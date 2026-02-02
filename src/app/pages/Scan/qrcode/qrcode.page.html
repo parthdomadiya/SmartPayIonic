@@ -27,4 +27,20 @@
     <ion-icon name="chevron-down" style="font-size: 20px;color:#9CA3AF;" />
   </div>
 
+  <div class="column" style="align-items: center;margin-top: 30px;">
+    <ion-img [src]="darkMode?'../../../../assets/image/s37d.png':'../../../../assets/image/s37.png'" />
+  </div>
+
 </ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <div class="column" style="align-items: center;">
+      <ion-icon name="alert-circle-outline" style="font-size: 24px;color: #2FA2B9;" />
+    </div>
+    <div class="ion-text-center" style="margin-top: 12px;">
+      <ion-text class="m12">This is a single-use code for your use only. Get a new code each time you pay with
+        smartpay</ion-text>
+    </div>
+  </ion-toolbar>
+</ion-footer>
