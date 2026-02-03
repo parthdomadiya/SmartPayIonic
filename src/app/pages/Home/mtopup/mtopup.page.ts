@@ -3,21 +3,21 @@ import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-map',
-  templateUrl: './map.page.html',
-  styleUrls: ['./map.page.scss'],
-  standalone: false,
+  selector: 'app-mtopup',
+  templateUrl: './mtopup.page.html',
+  styleUrls: ['./mtopup.page.scss'],
+  standalone:false,
 })
-export class MapPage implements OnInit {
+export class MtopupPage implements OnInit {
 
-  darkMode = false;
+ darkMode = false;
 
-  constructor(private modalcontroller: ModalController, private rou: Router) { }
-
-  close() {
-    this.modalcontroller.dismiss();
-    // this.rou.navigate(['./tabs'])
-  }
+  constructor(private modalcontroller: ModalController,private rou:Router) { }
+ 
+   close() {
+     this.modalcontroller.dismiss();
+    //  this.rou.navigate(['./tabs'])
+   }
 
   ngOnInit(): void {
     this.checkAppMode();

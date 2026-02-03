@@ -1,0 +1,43 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+    <ion-title class="b18" style="text-align: center;">Activity</ion-title>
+    <ion-buttons slot="end">
+      <div class="icon">
+        <ion-icon name="ellipsis-horizontal" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="scroll list">
+    <div>
+      <div routerLink="/bank" class="box list" style="background-color: #0A6375;width: 280px;">
+        <ion-text class="s14" style="color: #fff;flex: 1;">Smartpay Cards</ion-text>
+        <ion-text class="s14" style="color: #fff;">**** 1990</ion-text>
+        <ion-img src="../../../../assets/image/s70.png" style="height: 24px;width: 40px;margin-left: 5px;" />
+      </div>
+    </div>
+    <div>
+      <div routerLink="/bank" class="box list" style="background-color: #1D2734;width: 280px;margin-left: 10px;">
+        <ion-text class="s14" style="color: #fff;flex: 1;">Smartpay Cards</ion-text>
+        <ion-text class="s14" style="color: #fff;">**** 1990</ion-text>
+        <ion-img src="../../../../assets/image/s70.png" style="height: 24px;width: 40px;margin-left: 5px;" />
+      </div>
+    </div>
+  </div>
+
+  <div class="boxo"
+    style="border-color: var(--ion-color-boxl);background-color: var(--ion-color-box);padding: 0;margin-top: 20px;padding-bottom: 10px;">
+    <div style="padding: 15px;">
+      <ion-text class="s16">Patrick Guratchai</ion-text>
+    </div>
+  </div>
+
+</ion-content>

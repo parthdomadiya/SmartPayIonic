@@ -1,0 +1,44 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/phone">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+    <ion-title class="b18" style="text-align: center;">Phonebook</ion-title>
+  </ion-toolbar>
+  <div class="list" style="margin: 10px 15px;">
+    <div class="input" style="flex: 1;">
+      <ion-icon name="search-outline" style="font-size: 24px;color: var(--ion-color-txt);" />
+      <ion-input placeholder="Pat|" style="margin-left: 12px;flex: 1;" />
+    </div>
+    <ion-text class="b16" style="margin-left: 12px;">Cancel</ion-text>
+  </div>
+
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+  <ion-text class="b18" style="color: var(--ion-color-dis);">Results</ion-text>
+
+  <div class="list" style="margin-top: 20px;">
+    <ion-img src="../../../../assets/image/s68.png" style="height: 56px;width: 56px;" />
+    <div style="margin-left: 12px;flex: 1;">
+      <ion-text class="s16">Patrick Guratchai</ion-text>
+      <div style="margin-top: 5px;">
+        <ion-text class="r14" style="color: var(--ion-color-dis);">(319) 555-0115</ion-text>
+      </div>
+    </div>
+  </div>
+
+   <div class="list" style="margin-top: 20px;">
+    <ion-img src="../../../../assets/image/s69.png" style="height: 56px;width: 56px;" />
+    <div style="margin-left: 12px;flex: 1;">
+      <ion-text class="s16">Patricia Numnpong</ion-text>
+      <div style="margin-top: 5px;">
+        <ion-text class="r14" style="color: var(--ion-color-dis);">(208) 555-0112</ion-text>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

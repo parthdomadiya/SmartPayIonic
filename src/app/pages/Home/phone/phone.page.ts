@@ -1,23 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { ModalController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-map',
-  templateUrl: './map.page.html',
-  styleUrls: ['./map.page.scss'],
-  standalone: false,
+  selector: 'app-phone',
+  templateUrl: './phone.page.html',
+  styleUrls: ['./phone.page.scss'],
+  standalone:false,
 })
-export class MapPage implements OnInit {
+export class PhonePage implements OnInit {
 
   darkMode = false;
 
-  constructor(private modalcontroller: ModalController, private rou: Router) { }
-
-  close() {
-    this.modalcontroller.dismiss();
-    // this.rou.navigate(['./tabs'])
-  }
+  constructor() { }
 
   ngOnInit(): void {
     this.checkAppMode();

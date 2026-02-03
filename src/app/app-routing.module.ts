@@ -120,6 +120,26 @@ const routes: Routes = [
     path: 'map',
     loadChildren: () => import('./pages/Home/map/map.module').then( m => m.MapPageModule)
   },
+  {
+    path: 'this',
+    loadChildren: () => import('./pages/Home/this/this.module').then( m => m.ThisPageModule)
+  },
+  {
+    path: 'thisd',
+    loadChildren: () => import('./pages/Home/thisd/thisd.module').then( m => m.ThisdPageModule)
+  },
+  {
+    path: 'mtopup',
+    loadChildren: () => import('./pages/Home/mtopup/mtopup.module').then( m => m.MtopupPageModule)
+  },
+  {
+    path: 'phone',
+    loadChildren: () => import('./pages/Home/phone/phone.module').then( m => m.PhonePageModule)
+  },
+  {
+    path: 'psearch',
+    loadChildren: () => import('./pages/Home/psearch/psearch.module').then( m => m.PsearchPageModule)
+  },
 ];
 
 @NgModule({

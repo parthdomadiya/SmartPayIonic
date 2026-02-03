@@ -1,13 +1,93 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>map</ion-title>
+<ion-header [translucent]="false" style="box-shadow: none;background-color: #171725;">
+  <ion-toolbar style="--border-width: 0 0;--background: #171725;">
+    <ion-buttons slot="start" routerLink="/tabs">
+      <div class="icon" style="border-color: #E5E7EB50;">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: #fff;" />
+      </div>
+    </ion-buttons>
+    <ion-title class="b18" style="text-align: center;color: #fff;">Find ATM</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">map</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" [class]="darkMode?'bgd':'bg'">
+
+  <div class="box"
+    style="position: fixed;bottom: 120px;width: 91%;background-color: var(--ion-color-bg);left: 20px;right: 20px;">
+    <div class="list">
+      <div class="icon2" style="height: 56px;width: 56px;">
+        <ion-img src="../../../../assets/image/s46.png" style="height: 32px;width: 32px;" />
+      </div>
+      <div style="margin-left: 12px;flex: 1;">
+        <ion-text class="b16">Bank of America</ion-text>
+        <div style="margin-top: 5px;">
+          <ion-text class="m12" style="color: var(--ion-color-dis);">318 Grand St, New York 10002, US</ion-text>
+        </div>
+      </div>
+    </div>
+    <div class="btn1"
+      style="margin-top: 15px;background-color: var(--ion-color-txt);justify-content: space-between;padding: 0 10px;">
+      <ion-text class="b16" style="color: var(--ion-color-bg);">Get Direction</ion-text>
+      <ion-icon name="arrow-redo-outline" style="font-size: 24px;color: var(--ion-color-bg);" />
+    </div>
+  </div>
+
+  <ion-modal cssClass="rbsheet" trigger="open-modal4" [initialBreakpoint]="0.75" [breakpoints]="[0, 0.75]"
+    handleBehavior="cycle">
+    <ng-template>
+      <ion-content class="ion-padding">
+
+        <ion-img src="../../../../assets/image/s50.png" />
+
+        <div class="list" style="margin-top: 15px;">
+          <div style="flex: 1;">
+            <ion-text class="apptitle">Bank of America</ion-text>
+            <div>
+              <ion-text class="m12" style="color: var(--ion-color-dis);">318 Grand St, New York 10002, US</ion-text>
+            </div>
+          </div>
+          <ion-icon name="bookmark-outline" style="font-size: 24px;color: var(--ion-color-dis);" />
+        </div>
+
+        <div class="list" style="margin-top: 15px;">
+          <div class="boxo column" style="border-color: var(--ion-color-lines);align-items: center;flex: 1;">
+            <div class="icon1" style="margin-bottom: 7px;">
+              <ion-icon name="star-outline" style="font-size: 20px;color: #FB923C;" />
+            </div>
+            <ion-text class="m12" style="color: var(--ion-color-dis);">400 reviews</ion-text>
+          </div>
+          <div class="boxo column"
+            style="border-color: var(--ion-color-lines);align-items: center;flex: 1;margin: 0 10px;">
+            <div class="icon1" style="margin-bottom: 7px;">
+              <ion-icon name="car-outline" style="font-size: 20px;color: #2FA2B9;" />
+            </div>
+            <ion-text class="m12" style="color: var(--ion-color-dis);">5,6 mils</ion-text>
+          </div>
+          <div class="boxo column" style="border-color: var(--ion-color-lines);align-items: center;flex: 1;">
+            <div class="icon1" style="margin-bottom: 7px;">
+              <ion-icon name="time-outline" style="font-size: 20px;color: #AB92F0;" />
+            </div>
+            <ion-text class="m12" style="color: var(--ion-color-dis);">08:00-12:00</ion-text>
+          </div>
+        </div>
+
+        <div (click)="close()" class="btn1"
+          style="margin-top: 15px;background-color: var(--ion-color-txt);justify-content: space-between;padding: 0 10px;">
+          <ion-text class="b16" style="color: var(--ion-color-bg);">Get Direction</ion-text>
+          <ion-icon name="arrow-redo-outline" style="font-size: 24px;color: var(--ion-color-bg);" />
+        </div>
+
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
 </ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <div class="box list" id="open-modal4">
+      <ion-icon name="search" style="font-size: 24px;color: var(--ion-color-txt);" />
+      <ion-text class="s16" style="margin-left: 12px;flex: 1;">Bank of America ATM</ion-text>
+      <ion-icon name="close" style="font-size: 24px;color: #2FA2B9;" />
+    </div>
+  </ion-toolbar>
+</ion-footer>
