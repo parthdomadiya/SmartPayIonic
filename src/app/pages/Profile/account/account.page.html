@@ -1,0 +1,61 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/tabs/profile">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+    <ion-title class="b18" style="text-align: center;">Account Info</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="column" style="align-items: center;margin-bottom: 20px;">
+    <ion-img [src]="darkMode?'../../../../assets/image/s78d.png':'../../../../assets/image/s78.png'"
+      style="height: 100px;width: 100px;" />
+  </div>
+
+  <ion-text class="b16" style="color: var(--ion-color-dis);">Personal Info</ion-text>
+
+  <div class="boxo" style="margin-top: 15px;margin-bottom: 20px;">
+    <div class="list1">
+      <ion-text class="s14" style="color: var(--ion-color-dis);">Your name</ion-text>
+      <ion-text class="s14">Anabella Angela</ion-text>
+    </div>
+    <div class="list1" style="margin-top: 20px;">
+      <ion-text class="s14" style="color: var(--ion-color-dis);">Occupation</ion-text>
+      <ion-text class="s14">Students</ion-text>
+    </div>
+    <div class="list1" style="margin-top: 20px;">
+      <ion-text class="s14" style="color: var(--ion-color-dis);">Employer</ion-text>
+      <ion-text class="s14">Overlay Design</ion-text>
+    </div>
+    <div class="list1" style="margin-top: 20px;">
+      <ion-text class="s14" style="color: var(--ion-color-dis);">U.S Citizen</ion-text>
+      <ion-toggle checked="true"></ion-toggle>
+    </div>
+  </div>
+
+  <ion-text class="b16">Contact Info</ion-text>
+
+  <div class="boxo" style="margin-top: 15px;margin-bottom: 20px;">
+    <div class="list1">
+      <ion-text class="s14" style="color: var(--ion-color-dis);">Phone number</ion-text>
+      <ion-text class="s14">(1) 8976 4567 666</ion-text>
+    </div>
+    <div class="list1" style="margin-top: 20px;">
+      <ion-text class="s14" style="color: var(--ion-color-dis);">Email</ion-text>
+      <ion-text class="s14">anabelangella@mail.com</ion-text>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <div class="btn1" routerLink="/edit">
+      <ion-text class="b16">Edit</ion-text>
+    </div>
+  </ion-toolbar>
+</ion-footer>

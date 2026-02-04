@@ -1,13 +1,35 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>tabs</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-tabs #tabs (ionTabsDidChange)="setCurrentTab();checkAppMode();">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tabs</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+  <ion-fab vertical="bottom" horizontal="center" translucent="true" style="bottom: 20px;">
+    <ion-fab-button routerLink="/scan" >
+      <ion-img src="../../../assets/image/b2.png" style="height: 48px;width: 48px;" />
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon [name]="selectTab==='home'?'home':'home-outline'" style="font-size: 24px;" />
+      Home
+    </ion-tab-button>
+    <ion-tab-button tab="card">
+      <ion-icon [name]="selectTab==='card'?'card':'card-outline'" style="font-size: 24px;" />
+      Timeline
+    </ion-tab-button>
+
+    <div style="height: 52px;width: 52px;">
+      
+    </div>
+
+    <ion-tab-button tab="activity">
+      <ion-img [src]="getImageSource()" style="height: 24px;width: 24px;" />
+      Activity
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile">
+      <ion-icon [name]="selectTab==='profile'?'person':'person-outline'" style="font-size: 24px;" />
+      Profile
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+</ion-tabs>

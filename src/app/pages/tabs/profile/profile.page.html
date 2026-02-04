@@ -1,0 +1,111 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+    <ion-title class="b18" style="text-align: center;">Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="column" style="align-items: center;">
+    <ion-img [src]="darkMode?'../../../../assets/image/s76d.png':'../../../../assets/image/s76.png'"
+      style="height: 140px;width: 260px;" />
+  </div>
+
+  <div class="ion-text-center" style="margin-top: 2px;">
+    <ion-text class="subtitle">Anabella Angela</ion-text>
+  </div>
+
+  <div class="ion-text-center">
+    <ion-text class="r12" style="color: var(--ion-color-dis);">anabelangella@mail.com</ion-text>
+  </div>
+
+  <div routerLink="/refer" class="list" style="margin-top: 20px;">
+    <div class="icon2" style="height: 40px;width: 40px;">
+      <ion-img src="../../../../assets/image/s77.png" style="height: 18px;width: 18px;" />
+    </div>
+    <ion-text class="m14" style="margin-left: 12px;flex: 1;">Referral Code</ion-text>
+    <ion-icon name="chevron-forward" style="font-size: 18px;color: var(--ion-color-dis);" />
+  </div>
+
+  <div routerLink="/account" class="list" style="margin-top: 20px;">
+    <div class="icon2" style="height: 40px;width: 40px;">
+      <ion-icon name="person-outline" style="font-size: 18px;color: #2FA2B9;" />
+    </div>
+    <ion-text class="m14" style="margin-left: 12px;flex: 1;">Account Info</ion-text>
+    <ion-icon name="chevron-forward" style="font-size: 18px;color: var(--ion-color-dis);" />
+  </div>
+
+  <div routerLink="/contact" class="list" style="margin-top: 20px;">
+    <div class="icon2" style="height: 40px;width: 40px;">
+      <ion-icon name="people-outline" style="font-size: 18px;color: #AB92F0;" />
+    </div>
+    <ion-text class="m14" style="margin-left: 12px;flex: 1;">Contact List</ion-text>
+    <ion-icon name="chevron-forward" style="font-size: 18px;color: var(--ion-color-dis);" />
+  </div>
+
+  <div routerLink="/language" class="list" style="margin-top: 20px;">
+    <div class="icon2" style="height: 40px;width: 40px;">
+      <ion-icon name="language-outline" style="font-size: 18px;color: #5FA8EE;" />
+    </div>
+    <ion-text class="m14" style="margin-left: 12px;flex: 1;">Language</ion-text>
+    <ion-icon name="chevron-forward" style="font-size: 18px;color: var(--ion-color-dis);" />
+  </div>
+
+  <div class="list" style="margin-top: 20px;">
+    <div class="icon2" style="height: 40px;width: 40px;">
+      <ion-icon name="moon-outline" style="font-size: 18px;color: var(--ion-color-txt);" />
+    </div>
+    <ion-text class="m14" style="margin-left: 12px;flex: 1;">Dark Mode</ion-text>
+    <ion-toggle [checked]="darkMode" (ionChange)="toggleDarkMode()"></ion-toggle>
+  </div>
+
+  <div class="lines"></div>
+
+  <div routerLink="/setting" class="list" >
+    <div class="icon2" style="height: 40px;width: 40px;">
+      <ion-icon name="settings-outline" style="font-size: 18px;color: #F092AD;" />
+    </div>
+    <ion-text class="m14" style="margin-left: 12px;flex: 1;">General Setting</ion-text>
+    <ion-icon name="chevron-forward" style="font-size: 18px;color: var(--ion-color-dis);" />
+  </div>
+
+  <div  class="list" style="margin-top: 20px;" >
+    <div class="icon2" style="height: 40px;width: 40px;">
+      <ion-icon name="lock-closed-outline" style="font-size: 18px;color: #FB923C;" />
+    </div>
+    <ion-text class="m14" style="margin-left: 12px;flex: 1;">Change Password</ion-text>
+    <ion-icon name="chevron-forward" style="font-size: 18px;color: var(--ion-color-dis);" />
+  </div>
+
+  <div  class="list" style="margin-top: 20px;" >
+    <div class="icon2" style="height: 40px;width: 40px;">
+      <ion-icon name="scan-outline" style="font-size: 18px;color: #AB92F0;" />
+    </div>
+    <ion-text class="m14" style="margin-left: 12px;flex: 1;">Change Log In PIN</ion-text>
+    <ion-icon name="chevron-forward" style="font-size: 18px;color: var(--ion-color-dis);" />
+  </div>
+
+  <div class="lines"></div>
+
+  <div routerLink="/faq" class="list" >
+    <div class="icon2" style="height: 40px;width: 40px;">
+      <ion-icon name="help-outline" style="font-size: 18px;color: #55BBC5;" />
+    </div>
+    <ion-text class="m14" style="margin-left: 12px;flex: 1;">FAQs</ion-text>
+    <ion-icon name="chevron-forward" style="font-size: 18px;color: var(--ion-color-dis);" />
+  </div>
+
+  <div class="list" style="margin-top: 20px;margin-bottom: 100px;">
+    <div class="icon2" style="height: 40px;width: 40px;">
+      <ion-icon name="star-outline" style="font-size: 18px;color: #FACC15;" />
+    </div>
+    <ion-text class="m14" style="margin-left: 12px;flex: 1;">Rate Us</ion-text>
+    <ion-icon name="chevron-forward" style="font-size: 18px;color: var(--ion-color-dis);" />
+  </div>
+
+</ion-content>

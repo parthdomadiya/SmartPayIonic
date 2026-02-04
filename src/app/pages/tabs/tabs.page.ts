@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonTabs } from '@ionic/angular';
 
 @Component({
   selector: 'app-tabs',
@@ -24,5 +25,25 @@ export class TabsPage implements OnInit {
       ? (this.darkMode = true)
       : (this.darkMode = false);
     document.body.classList.toggle('dark', this.darkMode);
+  }
+
+  selectTab: any;
+  @ViewChild('tabs', { static: false })
+  tabs!: IonTabs;
+
+  setCurrentTab() {
+    this.selectTab = this.tabs.getSelected();
+  }
+
+  getImageSource(): string {
+    if (this.selectTab === 'activity') {
+      return '../../../../assets/image/b1f.png';
+    } else {
+      if (this.darkMode) {
+        return '../../../../assets/image/b1d.png';
+      } else {
+        return '../../../../assets/image/b1.png';
+      }
+    }
   }
 }

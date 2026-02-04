@@ -1,0 +1,68 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/tabs/profile">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+    <ion-title class="b18" style="text-align: center;">Select Language</ion-title>
+  </ion-toolbar>
+  <div class="input" style="margin: 10px 15px;">
+    <ion-icon name="search-outline" style="font-size: 24px;color: var(--ion-color-txt);" />
+    <ion-input placeholder="Search" style="margin-left: 12px;flex: 1;" />
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="box" style="margin-bottom: 20px;">
+    <ion-radio-group value="1">
+      <div class="list">
+        <ion-img src="../../../../assets/image/s7.png" style="height: 15px;width: 20px;" />
+        <ion-text class="s16" style="margin-left: 12px;flex: 1;">English (US)</ion-text>
+        <ion-radio checked="true" value="1"></ion-radio>
+      </div>
+      <div class="list" style="margin-top: 20px;">
+        <ion-img src="../../../../assets/image/s8.png" style="height: 15px;width: 20px;" />
+        <ion-text class="s16" style="margin-left: 12px;flex: 1;">English (ENG)</ion-text>
+        <ion-radio value="2"></ion-radio>
+      </div>
+      <div class="list" style="margin-top: 20px;">
+        <ion-img src="../../../../assets/image/s12.png" style="height: 15px;width: 20px;" />
+        <ion-text class="s16" style="margin-left: 12px;flex: 1;">Indonesian</ion-text>
+        <ion-radio value="3"></ion-radio>
+      </div>
+      <div class="list" style="margin-top: 20px;">
+        <ion-img src="../../../../assets/image/s82.png" style="height: 15px;width: 20px;" />
+        <ion-text class="s16" style="margin-left: 12px;flex: 1;">Russia</ion-text>
+        <ion-radio value="4"></ion-radio>
+      </div>
+      <div class="list" style="margin-top: 20px;">
+        <ion-img src="../../../../assets/image/s79.png" style="height: 15px;width: 20px;" />
+        <ion-text class="s16" style="margin-left: 12px;flex: 1;">French</ion-text>
+        <ion-radio value="5"></ion-radio>
+      </div>
+      <div class="list" style="margin-top: 20px;">
+        <ion-img src="../../../../assets/image/s10.png" style="height: 15px;width: 20px;" />
+        <ion-text class="s16" style="margin-left: 12px;flex: 1;">Chinese</ion-text>
+        <ion-radio value="6"></ion-radio>
+      </div>
+      <div class="list" style="margin-top: 20px;">
+        <ion-img src="../../../../assets/image/s80.png" style="height: 15px;width: 20px;" />
+        <ion-text class="s16" style="margin-left: 12px;flex: 1;">Japanese</ion-text>
+        <ion-radio value="7"></ion-radio>
+      </div>
+      <div class="list" style="margin-top: 20px;">
+        <ion-img src="../../../../assets/image/s81.png" style="height: 15px;width: 20px;" />
+        <ion-text class="s16" style="margin-left: 12px;flex: 1;">Germany</ion-text>
+        <ion-radio value="8"></ion-radio>
+      </div>
+      <div class="list" style="margin-top: 20px;">
+        <ion-img src="../../../../assets/image/s11.png" style="height: 15px;width: 20px;" />
+        <ion-text class="s16" style="margin-left: 12px;flex: 1;">Netherland</ion-text>
+        <ion-radio value="9"></ion-radio>
+      </div>
+    </ion-radio-group>
+  </div>
+
+</ion-content>

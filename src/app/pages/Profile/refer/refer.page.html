@@ -1,0 +1,52 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/tabs/profile">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="column" style="align-items: center;">
+    <ion-img [src]="darkMode?'../../../../assets/image/s83d.png':'../../../../assets/image/s83.png'"
+      style="height: 200px;width: 240px;" />
+  </div>
+
+  <div class="ion-text-center" style="margin-top: 20px;">
+    <ion-text class="apptitle">Here’s $15 <ion-text class="apptitle" style="color: #2FA2B9;">free</ion-text> on
+      us!</ion-text>
+  </div>
+
+  <div class="ion-text-center">
+    <ion-text class="r16" style="color: var(--ion-color-dis);">Share you referral link and earn $15</ion-text>
+  </div>
+
+  <div class="input list1" style="margin-top: 30px;">
+    <ion-icon name="copy-outline" style="font-size: 24px;color: var(--ion-color-dis);" />
+    <ion-text class="m12" style="color: #9CA3AF;">FGX4456R</ion-text>
+    <ion-text class="b14" style="color: #2FA2B9;">Share</ion-text>
+  </div>
+
+  <div class="lines"></div>
+
+  <div class="ion-text-center" style="margin-top: 25px;">
+    <ion-text class="apptitle">Get $2 <ion-text class="apptitle" style="color: #2FA2B9;">free</ion-text></ion-text>
+  </div>
+
+  <div class="ion-text-center">
+    <ion-text class="r16" style="color: var(--ion-color-dis);">For any account you connects</ion-text>
+  </div>
+
+   <div class="list" style="margin: 15px 0;">
+    <div class="fb">
+      <ion-img src="../../../../assets/image/s3.png" style="height: 24px;width: 24px;" />
+    </div>
+    <div class="fb" style="margin-left: 10px;">
+       <ion-icon name="logo-apple" style="font-size: 24px;color: var(--ion-color-txt);" />
+    </div>
+  </div>
+
+</ion-content>

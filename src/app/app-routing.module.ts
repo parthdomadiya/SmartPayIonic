@@ -140,6 +140,50 @@ const routes: Routes = [
     path: 'psearch',
     loadChildren: () => import('./pages/Home/psearch/psearch.module').then( m => m.PsearchPageModule)
   },
+  {
+    path: 'bank',
+    loadChildren: () => import('./pages/Activity/bank/bank.module').then( m => m.BankPageModule)
+  },
+  {
+    path: 'ecard',
+    loadChildren: () => import('./pages/Card/ecard/ecard.module').then( m => m.EcardPageModule)
+  },
+  {
+    path: 'chat',
+    loadChildren: () => import('./pages/Home/chat/chat.module').then( m => m.ChatPageModule)
+  },
+  {
+    path: 'account',
+    loadChildren: () => import('./pages/Profile/account/account.module').then( m => m.AccountPageModule)
+  },
+  {
+    path: 'edit',
+    loadChildren: () => import('./pages/Profile/edit/edit.module').then( m => m.EditPageModule)
+  },
+  {
+    path: 'language',
+    loadChildren: () => import('./pages/Profile/language/language.module').then( m => m.LanguagePageModule)
+  },
+  {
+    path: 'setting',
+    loadChildren: () => import('./pages/Profile/setting/setting.module').then( m => m.SettingPageModule)
+  },
+  {
+    path: 'noti',
+    loadChildren: () => import('./pages/Profile/noti/noti.module').then( m => m.NotiPageModule)
+  },
+  {
+    path: 'refer',
+    loadChildren: () => import('./pages/Profile/refer/refer.module').then( m => m.ReferPageModule)
+  },
+  {
+    path: 'contact',
+    loadChildren: () => import('./pages/Profile/contact/contact.module').then( m => m.ContactPageModule)
+  },
+  {
+    path: 'faq',
+    loadChildren: () => import('./pages/Profile/faq/faq.module').then( m => m.FaqPageModule)
+  },
 ];
 
 @NgModule({

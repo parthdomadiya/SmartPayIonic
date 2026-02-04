@@ -6,15 +6,32 @@ import { TabsPage } from './tabs.page';
 const routes: Routes = [
   {
     path: '',
-    component: TabsPage
-  },  {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    component: TabsPage,
+    children: [
+      {
+        path: '',
+        redirectTo: 'home',
+        pathMatch: 'full'
+      },
+      {
+        path: 'home',
+        loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+      },
+      {
+        path: 'activity',
+        loadChildren: () => import('./activity/activity.module').then(m => m.ActivityPageModule)
+      },
+      {
+        path: 'card',
+        loadChildren: () => import('./card/card.module').then(m => m.CardPageModule)
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
+      }
+    ]
   },
-  {
-    path: 'activity',
-    loadChildren: () => import('./activity/activity.module').then( m => m.ActivityPageModule)
-  }
+
 
 ];
 
@@ -22,4 +39,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }

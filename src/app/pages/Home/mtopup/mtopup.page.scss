@@ -18,3 +18,17 @@
         --highlight-color-focused: none;
     }
 }
+
+ion-radio {
+  --color: #9CA3AF;
+  --color-checked: #2FA2B9;
+}
+
+ion-radio.ios::part(container) {
+ 
+  border: 2px solid #9CA3AF;
+}
+
+.radio-checked.ios::part(container) {
+  border-color: #2FA2B9;
+}

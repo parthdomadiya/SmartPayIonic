@@ -1,0 +1,58 @@
+<ion-header [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <ion-buttons slot="start" routerLink="/tabs/profile">
+      <div class="icon">
+        <ion-icon name="chevron-back" style="font-size: 24px;color: var(--ion-color-txt);" />
+      </div>
+    </ion-buttons>
+    <ion-title class="b18" style="text-align: center;">Contacts</ion-title>
+  </ion-toolbar>
+  <div style="margin: 10px 15px;">
+    <ion-text class="apptitle">You have any question ?</ion-text>
+    <div class="input" style="margin-top: 10px;">
+      <ion-icon name="search-outline" style="font-size: 24px;color: var(--ion-color-txt);" />
+      <ion-input placeholder="Search" style="margin-left: 12px;flex: 1;" />
+    </div>
+  </div>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="list1">
+    <ion-text class="b18">Frequently Asked</ion-text>
+    <ion-text class="b16" style="color: #2FA2B9;">View All</ion-text>
+  </div>
+
+  <div class="boxo" style="margin-top: 15px;">
+    <ion-text class="b16">How do I create a Smartpay account?</ion-text>
+    <div style="margin-top: 5px;">
+      <ion-text class="r12" style="color: var(--ion-color-dis);">You can create a Smartpay account by: download and
+        open the smartpay application first then select ...</ion-text>
+    </div>
+  </div>
+
+  <div class="boxo" style="margin-top: 15px;">
+    <ion-text class="b16">How to create a card for Smartpay?</ion-text>
+    <div style="margin-top: 5px;">
+      <ion-text class="r12" style="color: var(--ion-color-dis);">You can select the create card menu then select
+        "Add New Card" select the continue button then you ...</ion-text>
+    </div>
+  </div>
+
+  <div class="boxo" style="margin-top: 15px;margin-bottom: 20px;">
+    <ion-text class="b16">How to Top Up on Smartpay?</ion-text>
+    <div style="margin-top: 5px;">
+      <ion-text class="r12" style="color: var(--ion-color-dis);">Click the Top Up menu then select the amount of money
+        and the method then click the "top up now" button...</ion-text>
+    </div>
+  </div>
+
+</ion-content>
+
+<ion-footer [translucent]="false" style="box-shadow: none;">
+  <ion-toolbar color="bg" style="--border-width: 0 0;">
+    <div class="btn1" routerLink="/tabs/profile">
+      <ion-text class="b16">Load more</ion-text>
+    </div>
+  </ion-toolbar>
+</ion-footer>
