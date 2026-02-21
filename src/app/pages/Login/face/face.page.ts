@@ -14,7 +14,7 @@ export class FacePage implements OnInit {
   constructor(public nav: NavController) {
     setTimeout(() => {
       this.nav.navigateForward('/presid')
-    }, 2000);
+    }, 3000);
   }
 
   ngOnInit(): void {

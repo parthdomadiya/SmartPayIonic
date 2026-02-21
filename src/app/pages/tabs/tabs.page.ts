@@ -35,15 +35,34 @@ export class TabsPage implements OnInit {
     this.selectTab = this.tabs.getSelected();
   }
 
-  getImageSource(): string {
-    if (this.selectTab === 'activity') {
-      return '../../../../assets/image/b1f.png';
-    } else {
-      if (this.darkMode) {
-        return '../../../../assets/image/b1d.png';
-      } else {
-        return '../../../../assets/image/b1.png';
-      }
-    }
+  // getImageSource(): string {
+  //   if (this.selectTab === 'activity') {
+  //     return '../../../../assets/image/b1f.png';
+  //   } else {
+  //     if (this.darkMode) {
+  //       return '../../../../assets/image/b1d.png';
+  //     } else {
+  //       return '../../../../assets/image/b1.png';
+  //     }
+  //   }
+  // }
+
+ getImageSource(): string {
+  // Dark mode + active
+  if (this.darkMode && this.selectTab === 'activity') {
+    return 'assets/image/b1d.png';
+
+  // Light mode + active
+  } else if (!this.darkMode && this.selectTab === 'activity') {
+    return 'assets/image/b1f.png';
+
+  // Dark mode inactive OR light mode inactive
+  } else {
+    return 'assets/image/b1.png';
   }
+}
+
+
+
+
 }
