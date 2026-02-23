@@ -43,7 +43,7 @@ export class OtpPage implements OnInit {
       borderRadius: '12px',
       color: 'var(--ion-color-txt)',
       fontSize: '20px',
-      fontFamily: 'PlusJakartaSans-Bold',
+      fontFamily: 'SF-Pro-Display-Bold',
       backgroundColor: 'var(--ion-color-fb)',
     },
     containerStyles: {
